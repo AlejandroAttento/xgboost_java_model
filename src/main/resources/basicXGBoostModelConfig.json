@@ -1,0 +1,8 @@
+{
+  "eta": "0.1",
+  "max_depth": "3",
+  "objective": "multi:softmax",
+  "eval_metric": "merror",
+  "num_class": "7"
+
+}
