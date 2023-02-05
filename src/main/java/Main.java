@@ -1,5 +1,3 @@
-package main;
-
 import dataModels.RawDatasource;
 import ml.dmlc.xgboost4j.java.Booster;
 import ml.dmlc.xgboost4j.java.XGBoostError;
@@ -33,8 +31,6 @@ public class Main {
 
         Path targetPath = Paths.get(datasetPath.getParent().toString());
         File targetDir  = new File(targetPath.toUri());
-
-        System.out.println(targetDir);
 
         // Checks if the file is a zip file, if it exists and if the target path is already a directory.
         if (datasetPath.toString().endsWith(".zip") && zipFile.exists() && !resultingDir.isDirectory()) {
